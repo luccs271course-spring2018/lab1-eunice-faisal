@@ -15,7 +15,7 @@ A simple solution would be to make n an instant variable and have it printed out
 Discussion: How could you have automatically tested your initial
 solution from part 2?
 
-
+We could create a constant variable for n value.
 
 ##
 ### Discussion 3:
