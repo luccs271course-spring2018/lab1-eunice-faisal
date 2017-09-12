@@ -1,5 +1,7 @@
 package lab1;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -21,17 +23,25 @@ public class Main {
         //Call the function fizzBuzzArray with the given argument
         //fizzBuzzArray(n);
 
+		/*
         //Create string array to take the returned value from fizzBuzzArray(n)
         String[] myArray1;
         myArray1 = fizzBuzzArray(n);
-
-		/*
-		//testing with assert
-		testArray = [-10,-1,0,1,7,17];
+		*/
 		
-		for(int i = 0; i <= testArray.length; i++){
-            assert fizzBuzzArray(testArray[i]) ==;
-        }*/
+		/*
+			!Could not figure out how to use assert!
+				//testing with assert
+				testArray = [-10,-1,0,1,7,17];
+		
+				for(int i = 0; i <= testArray.length; i++){
+        	    	assert fizzBuzzArray(testArray[i]) ==;
+        		}
+        */
+        
+        //Create List array of strings to take the returned value from fizzBuzzList(n)
+        List<String> myList1 = new ArrayList<String>();
+        myList1 = fizzBuzzList(n);
     }
 
     public static String[] fizzBuzzArray(final int n) {
@@ -70,6 +80,26 @@ public class Main {
 		}
 		return null;
     }
+    
+    
+    public static List<String> fizzBuzzList(final int n) {
+		
+		List<String> myList = new ArrayList<String>();
+
+		for(int i = 0; i <= n; i++) {
+
+			if (i % 3 == 0 && i % 5 != 0) {
+				myList.add("fizz");
+			} else if (i % 5 == 0 && i % 3 != 0) {
+				myList.add("buzz");
+			} else if (i % 3 == 0 && i % 5 == 0) {
+				myList.add("fizzbuzz");
+			} else {
+				myList.add(Integer.toString(i));
+			}
+		}
+		return myList;
+	}
 }
 
 
