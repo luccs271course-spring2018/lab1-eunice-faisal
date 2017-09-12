@@ -1,4 +1,4 @@
-package hw;
+package lab1;
 
 
 public class Main {
@@ -8,6 +8,13 @@ public class Main {
         //	System.out.println(instance.getMessage());
         //	System.out.println(instance.getYear());
 
+
+		//Comment to grader: at this point, I had to eddit build.gradle adding a "run"
+		//					 branch and then running the project using command:-
+		//					 > ./gradlew run -PappArgs="['17']"
+		//					 in order to build successfully.
+		
+		
         //Saves first integer argument from command line to "n"
         int n = Integer.parseInt(args[0]);
 
